@@ -14,9 +14,18 @@
 </select>
 <button onclick="greetings();">ОК</button>
 <script>
-    function greetings() {
+    function greetings(userTown) {
         var userTown = document.getElementByid("town").value;
         console.log(userTown)
+        if (userTown= София) {
+            return "Здравей";
+        }
+        else if (userTown = Париж) {
+            return "solut";
+        }
+        else if (userTown = Лондон) {
+            return "Hi";
+        }
     }
     </script>
 </body>
