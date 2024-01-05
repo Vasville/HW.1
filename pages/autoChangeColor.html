@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        let testNode = document.querySelector(".box"),
+		colors = ["red", "green", "blue"],
+		i = 0;
+
+        function autoChangeColor(node){
+            setInterval(function(){		
+		node.style.backgroundColor = colors[i];				
+		i = (i+1) % colors.length;
+		console.log("i=", i);
+	}, 1000);
+        }
+        autoChangeColor(testNode);
+    </script>
+</body>
+</html>
