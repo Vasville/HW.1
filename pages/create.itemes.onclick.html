@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output {
+            color: red;
+            font-size: 3em;
+        }
+        #demo {
+            color: #000;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="Vasil" name="uname" placeholder="Enter some text here">
+    <button onclick="Addname();">ADD</button>
+    <div id="output"></div>
+    <p id="demo"></p>
+    <script>
+        var inputNode = 
+        document.querySelector("input[type='text']");
+        var outputNode = document.querySelector("#output");
+        function Addname() {
+            var x = document.getElementById("output").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+</html>
